@@ -1,4 +1,3 @@
-import { loopback } from 'ip';
 import React, {Component} from 'react';
 import Typewriter from 'typewriter-effect';
 

@@ -23,14 +23,24 @@ ul {
   color:#ff8000;
 }
 
-li {
+.navbar li {
   display: inline-block;
   height: 100%;
   padding: 10px;
+  font-family: fantasy;
+  font-size: 35px;
 }
 
-li  {
-  font-family: cursive;
-  font-size: 16px;
-  text-decoration: none;
+.navbar{
+  position: absolute;
+  top: 5px;
+  right: 0px;
 }
+
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  font-size:50px
+}
+

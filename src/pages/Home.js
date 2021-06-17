@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Typewriter from 'typewriter-effect';
 
+
 class Home extends Component{
-    state = [];
     render(){
         return(
+          
             <div className = "home">
               <div>Hello World</div>
               <div>name = Le Bao Duy Nguyen</div>
@@ -13,7 +14,6 @@ class Home extends Component{
                 autoStart: true,
                 loop: true,
   }}
-
 />
             </div>
             

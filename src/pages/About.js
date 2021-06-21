@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Data from '../data.json'
 import Typewriter from 'typewriter-effect';
+import Button from '../components/Button';
 
 class About extends Component{
     render(){
@@ -18,6 +19,7 @@ class About extends Component{
                 
                 <div className="exp-year">// 2+ years of experience</div>
                 <br/><hr/><br/>
+  
                 <h1 className="skills-header">My [Skills]</h1>
 
                 <div>

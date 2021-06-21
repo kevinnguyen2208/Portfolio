@@ -1,8 +1,7 @@
 body {
   background-color: black;
-  color: white;
+  color: #dbdbdb;
 }
-
 
 .full-width {
   width: 100%;
@@ -17,8 +16,12 @@ ul {
   margin-right: auto;
 }
 
-a:hover{
-  color:#ff8000;
+#link:hover{
+  color:#682ae9;
+}
+
+.icon-c:hover{
+  color:red;
 }
 
 .navbar li {
@@ -27,6 +30,7 @@ a:hover{
   padding: 10px;
   font-family: fantasy;
   font-size: 35px;
+  
 }
 
 .navbar{
@@ -41,23 +45,94 @@ a:hover{
 
 #link{
   text-decoration: none;
+  color:#dbdbdb
 }
+
 
 .logo{
   position: absolute;
   top: 10px;
   left: 50px;
   font-size:40px;
+  
 }
 
 
 /* Home */
 .home{
-  position: absolute;
-  top: 30%;
-  left: 50%;
+  width: 100%;
+  min-height:100vh;
+  padding-left:140px;
+  background-image: url("./img/spacehelmet.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
+.home-info{
+  color: #fff;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  padding:100px 0;
+}
+
+.home-desc{
+  min-height: 0px;
+}
+
+.home-desc-comment{
+  color: #6beb34
+}
+
+h1 h2 h3 .home-desc{
+  font-size: 60px;
+  line-height: 1;
+  padding-left: 12px;
+  color: #dbdbdb;
+}
+
+.tag{
+  display: block;
+  font-size: 20px;
+  color:  #682ae9;
+  font-weight: 800;
+  text-shadow: none;
+  margin: 3px 0;
+  padding-top: 10px;
+}
+
+.tag-open{
+  display: block;
+  font-size: 20px;
+  color:  #682ae9;
+  font-weight: 800;
+  text-shadow: none;
+  margin: 3px 0;
+  padding-top: 40px;
+}
+
+.tag-close{
+  display: block;
+  font-size: 20px;
+  color:  #682ae9;
+  font-weight: 800;
+  text-shadow: none;
+  margin: 3px 0;
+  padding-bottom: 20px
+}
+
+.tag-in{
+  display: block;
+  font-size: 20px;
+  color:  #682ae9;
+  font-weight: 800;
+  text-shadow: none;
+  margin: 3px 0;
+  padding-top: 0px;
+  padding-left: 40px;
+}
 
 
 
@@ -97,6 +172,7 @@ a:hover{
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 #skills-back{
@@ -113,6 +189,7 @@ a:hover{
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .myself{

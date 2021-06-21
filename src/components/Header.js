@@ -10,14 +10,16 @@ class Header extends Component {
   constructor(props) {
     super(props);
   }
+
+  toggleHover() {
+    this.setState({hover: !this.state.hover})
+  }
   render(){
-    
+   
     const path = this.props.location.pathname.slice(1);
-    if(path==""){
-      
-    }
+
     return(
-    <IconContext.Provider value={{color : "#4C2672", size :"1em"}}>
+    <IconContext.Provider value={{ color : "#dbdbdb", size :"1em"}}>
         
         <div className="logo">{(() => {
         if (path=="") {
@@ -42,9 +44,9 @@ class Header extends Component {
       </NavLink></li>
       <li><NavLink id="link" activeClassName="active" to="/contact">contact()
       </NavLink></li>
-      <li><NavLink id="link" activeClassName="active" to="//linkedin.com/in/lbduynguyen" target="blank"><FaLinkedin/>
+      <li><NavLink id="link-icon" activeClassName="active" to="//linkedin.com/in/lbduynguyen" target="blank"><FaLinkedin/>
       </NavLink></li>
-      <li><NavLink id="link" activeClassName="active" to="//github.com/kevinnguyen2208" target="blank"><GoMarkGithub/>
+      <li><NavLink id="link-icon" activeClassName="active" to="//github.com/kevinnguyen2208" target="blank"><GoMarkGithub/>
       </NavLink></li>
     </nav></ul></div>
     </IconContext.Provider>

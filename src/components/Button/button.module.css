@@ -2,15 +2,15 @@
 
 /* Button */
 .btn {
-    font-family: "cursive" bold;
+    font-family: Roboto Mono;
     position: relative;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2;
-    height: 50px;
+    height: 40px;
     transition: all 200ms linear;
     border-radius: 4px;
-    width: 150px;
+    width: 130px;
     letter-spacing: 1px;
     display: inline-flex;
     align-items: center;
@@ -22,5 +22,4 @@
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
     outline: 0;
     text-transform: capitalize;
-    
   }

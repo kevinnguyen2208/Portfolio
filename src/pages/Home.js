@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import Typewriter from 'typewriter-effect';
 import Typist from 'react-typist';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
+import StarfieldAnimation from 'react-starfield-animation';
+import ReactFloaterJs from 'react-floaterjs';
+import Helmet from '../resources/img/helmet.png';
+
 
 
 class Home extends Component{
@@ -9,8 +13,15 @@ class Home extends Component{
 
         return(          
             <div className = "home">
-                <div className='home-info'>
-              <Typist avgTypingDelay={25}>
+                
+                <div class="row">
+                    
+                    <div className="column1">
+                        
+                    
+                        <div className='home-info'>
+                        
+                <Typist avgTypingDelay={25}>
                   <span className="tag-open">&lt;header&gt;</span>
                   <h1 className="home-desc">Hello World</h1>
                   <span className="tag-close">&lt;/header&gt;</span>
@@ -31,14 +42,23 @@ class Home extends Component{
                     <span className="tag-open">&lt;footer&gt;</span>
                         <span className="tag-in">&lt;button&gt;</span>
                         <div className="home-desc">
-                            <Button btnColor="black" type="outline" onClick={event =>  window.location.href='/about'} >more ...
+                            <Button btnColor="black" backColor="#af6ebb" model="outline" onClick={event =>  window.location.href='/about'} >more ...
                             </Button>
                         </div>
                         <span className="tag-in">&lt;/button&gt;</span>
                     <span className="tag-close">&lt;/footer&gt;</span>
                 </Typist>
-            
                 </div>
+                </div>
+
+                    <div className="column2">
+                                <div>         
+                                    <ReactFloaterJs>
+                                    <img className="home-helmet" src={Helmet}  />
+                                    </ReactFloaterJs>                
+                                </div>
+                    </div>
+                </div>   
             </div>
         )
     }

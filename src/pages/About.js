@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Data from '../data.json'
 import Typewriter from 'typewriter-effect';
-import Button from '../components/Button';
+
 
 class About extends Component{
+
     render(){
+        
         return(
             <div className = "about" >
                 <div className="myself">

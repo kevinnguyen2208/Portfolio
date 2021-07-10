@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './button.module.css';
 
-const Button = ({ children, onClick, btnColor = 'teal', labelColor, disabled, type, style, ...props }) => {
+const Button = ({ children, onClick, btnColor = 'teal', backColor, labelColor, disabled, model, style, ...props }) => {
     const [
         hover,
         setHover
@@ -16,7 +16,7 @@ const Button = ({ children, onClick, btnColor = 'teal', labelColor, disabled, ty
     const outlineStyles = {
         border          : `1px solid ${btnColor}`,
         color           : btnColor,
-        backgroundColor : 'pink',
+        backgroundColor : backColor,
         borderRadius    : '25px'
     };
     const outlineHoverStyle = {
@@ -40,7 +40,7 @@ const Button = ({ children, onClick, btnColor = 'teal', labelColor, disabled, ty
         margin : '0 auto'
     };
     let btnStyle;
-    switch (type) {
+    switch (model) {
         case 'rounded':
             btnStyle = roundedStyle;
             break;
@@ -72,7 +72,7 @@ const Button = ({ children, onClick, btnColor = 'teal', labelColor, disabled, ty
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             {...props}
-            type="button"
+            model="button"
             onClick={
 
                     !disabled ? onClick :

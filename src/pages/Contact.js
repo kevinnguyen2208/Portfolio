@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import ContactForm from '../components/ContactForm/ContactForm.js';
-import '../components/ContactForm/ContactForm.css';
-import ContactBackground from '../resources/img/spider.jpg';
 import Helmet from 'react-helmet';
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './ContactForm.css';
-import Button from '../Button/Button';
+import Button from '../Button/Button.js';
 import emailjs from 'emailjs-com';
 import BackdropFilter from "react-backdrop-filter";
 

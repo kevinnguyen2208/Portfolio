@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../src/components/Button/button.module.css';
+import '../src/components/ContactForm/ContactForm.css';
+import '../src/components/NavBar/NavBar.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

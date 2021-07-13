@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Typewriter from 'typewriter-effect';
 import Typist from 'react-typist';
-import Button from '../components/Button/Button';
-import StarfieldAnimation from 'react-starfield-animation';
+import Button from '../components/Button/Button.js';
 import ReactFloaterJs from 'react-floaterjs';
 import Helmet from '../resources/img/helmet.png';
 

@@ -10,34 +10,34 @@ const Button = ({ children, onClick, btnColor = 'teal', backColor, labelColor, d
         setHover(!hover);
     };
     const commonStyles = {
-        backgroundColor : btnColor,
-        color           : labelColor || 'white'
+        backgroundColor: btnColor,
+        color: labelColor || 'white'
     };
     const outlineStyles = {
-        border          : `1px solid ${btnColor}`,
-        color           : btnColor,
-        backgroundColor : backColor,
-        borderRadius    : '25px'
+        border: `1px solid ${btnColor}`,
+        color: btnColor,
+        backgroundColor: backColor,
+        borderRadius: '25px'
     };
     const outlineHoverStyle = {
-        color           : labelColor || '#682ae9',
-        backgroundColor : 'white'
+        color: labelColor || '#682ae9',
+        backgroundColor: 'white'
     };
 
     const roundedStyle = {
-        backgroundColor : btnColor,
-        color           : labelColor || 'white',
-        borderRadius    : '25px'
+        backgroundColor: btnColor,
+        color: labelColor || 'white',
+        borderRadius: '25px'
     };
     const disabledStyle = {
-        cursor          : 'default',
-        backgroundColor : btnColor,
-        color           : labelColor || 'white',
-        opacity         : 0.4
+        cursor: 'default',
+        backgroundColor: btnColor,
+        color: labelColor || 'white',
+        opacity: 0.4
     };
     const blockStyles = {
-        width  : '95%',
-        margin : '0 auto'
+        width: '95%',
+        margin: '0 auto'
     };
     let btnStyle;
     switch (model) {
@@ -57,8 +57,8 @@ const Button = ({ children, onClick, btnColor = 'teal', backColor, labelColor, d
             break;
         default:
             btnStyle = {
-                backgroundColor : btnColor,
-                color           : labelColor || 'white'
+                backgroundColor: btnColor,
+                color: labelColor || 'white'
             };
             break;
     }
@@ -66,7 +66,7 @@ const Button = ({ children, onClick, btnColor = 'teal', backColor, labelColor, d
         <button
             style={
 
-                    disabled ? { ...commonStyles, ...btnStyle, ...disabledStyle, ...style } :
+                disabled ? { ...commonStyles, ...btnStyle, ...disabledStyle, ...style } :
                     { ...commonStyles, ...btnStyle, ...style }
             }
             onMouseEnter={toggleHover}
@@ -75,8 +75,8 @@ const Button = ({ children, onClick, btnColor = 'teal', backColor, labelColor, d
             model="button"
             onClick={
 
-                    !disabled ? onClick :
-                    () => {}
+                !disabled ? onClick :
+                    () => { }
             }
             className={styles.btn}
         >

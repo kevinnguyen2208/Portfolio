@@ -14,6 +14,7 @@ body {
   display:flex;
   flex-direction: column;
   padding-top: 80px;
+  width: 100%;
 }
 
 .home-desc{
@@ -24,18 +25,13 @@ body {
 .home-desc-comment{
   color: #A5CD2E;
   font-family:  Roboto Mono, monospace;
+  font-size: 1.6rem;
 }
 
-h1 h2 h3 .home-desc{
-  font-size: 60px;
-  line-height: 1;
-  padding-left: 12px;
-  color: #C95656;
-}
 
 .tag{
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
   color:  #CB0C71;
   font-weight: 800;
   text-shadow: none;
@@ -45,7 +41,7 @@ h1 h2 h3 .home-desc{
 
 .tag-open{
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
   color:  #CB0C71;
   font-weight: 800;
   text-shadow: none;
@@ -55,7 +51,7 @@ h1 h2 h3 .home-desc{
 
 .tag-close{
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
   color:  #CB0C71;
   font-weight: 800;
   text-shadow: none;
@@ -65,7 +61,7 @@ h1 h2 h3 .home-desc{
 
 .tag-in{
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
   color:  #CB0C71;
   font-weight: 800;
   text-shadow: none;
@@ -75,11 +71,9 @@ h1 h2 h3 .home-desc{
 }
 
 .home-helmet{
-  height: 700px;
-  width: 700px;
-  position: absolute;
-  top: -100px;
-  padding: 10px;
+  height: 600px;
+  width: 600px;
+  padding-left: 300px;
 }
 
 
@@ -103,52 +97,218 @@ h1 h2 h3 .home-desc{
 }
 
 
+@media screen and (max-width: 960px) {
+  .home-helmet{
+    width: 300px;
+    height: 300px;
+    padding-left: 150px;
+  }
+
+  .home-info{
+    padding-left: 50px;
+  }
+
+  .column1{
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+
+  .starfield-animation-nav{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .starfield-animation-home{
+    display: none;
+  }
+}
+
 
 /* About */
 .about{
   padding-top: 200px;
 }
 
-
-.skill-tabs {
-  column-count: 4;
-  column-gap: 200px;
-}
-
-.skill-tabs li {
-  display: inline-block; /*necessary*/
-}
-
-.skills-header{
-  text-align: center;
-}
-
-#skills-front{
-  background-color:yellow;
-  color: black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-#skills-back{
-  text-align: center;
-  background-color: violet;
-  color: black;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
 .myself{
   text-align: center;
-  font-size: 20px;
+  font-size: 1.8rem;
+  font-family: Roboto Mono, monospace;
+  padding: 40px;
+}
+
+.social-media-about{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.icon-about{
+  color: red;
+}
+
+.line-break{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.end-br{
+  margin-bottom: 10rem;
+}
+
+
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+}
+
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+.underline {
+  width: 10rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #05f7ff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
   font-family: Roboto Mono, monospace;
 }
+
+
+.jobs-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.job-btn {
+  background: transparent;
+  color: #dbdbdb;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  margin: 0 0.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0;
+}
+
+.job-btn:hover {
+  color: #3C17CB;
+}
+
+.active-btn {
+  color: #3C17CB;
+}
+
+.job-info h3 {
+  font-weight: 400;
+}
+
+.job-info h4 {
+  text-transform: uppercase;
+  background: #3C17CB;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+}
+
+.job-date {
+  letter-spacing: var(--spacing);
+}
+
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  font-family: Roboto Mono, monospace;
+}
+
+.job-desc p {
+  margin-bottom: 0;
+}
+
+.job-icon {
+  color: #3C17CB;
+}
+
+
+@media screen and (min-width: 992px) {
+  .jobs-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 4rem;
+  }
+  .btn-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .job-btn {
+    margin-bottom: 1rem;
+  }
+  .job-btn:hover{
+    border-left: 2px solid #05f7ff;
+  } 
+  .active-btn{
+    border-left: 2px solid #05f7ff;
+  } 
+}
+
+@media screen and (max-width: 992px) {
+  .job-btn:hover{
+    border-bottom: 2px solid #05f7ff;
+  } 
+  .active-btn{
+    border-bottom: 2px solid #05f7ff;
+  } 
+}
+
+.skills-container{
+  text-align: center;
+  width: 98%;
+}
+
+.skills-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 220px;
+  width: 60%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.671);
+  font-size: calc(1vw + 1.5vh);
+  padding: 40px;
+  border-radius: 25px;
+  font-family: Roboto Mono, monospace;
+  cursor: grabbing;
+}
+
+
 
 /* Contact */
 .contact{
@@ -163,5 +323,7 @@ h1 h2 h3 .home-desc{
 .contact-heading{
   font-family: Roboto Mono, monospace;   
 }
+
+
 
 

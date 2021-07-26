@@ -1,3 +1,10 @@
+@media screen and (max-width: 960px) {
+    .contact-container{
+       display: flex;
+       flex-direction: column;
+    }
+  }
+
 
 .contact-container{
     display: flex;
@@ -79,7 +86,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 60px;
+    text-decoration: none;
 }
 
 form{

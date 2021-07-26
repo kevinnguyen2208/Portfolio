@@ -15,17 +15,13 @@ ul {
     list-style-type: none;
   }
   
-.link:hover{
-  color:#3C17CB;
-}
-
 
 .nav-menu li {
   display: inline-block;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
   font-family: Roboto Mono, monospace;
-  font-size: 35px; 
+  font-size: 40px; 
 }
 
 .nav-menu{
@@ -45,8 +41,9 @@ ul {
   color:#dbdbdb
 }
 
-.link-icon{
-  top: 0.5rem;
+
+.link:hover{
+  color:#3C17CB;
 }
 
 
@@ -56,12 +53,31 @@ ul {
   left: 50px;
   font-size:40px;
   font-family: Roboto Mono, monospace;
+  color: #3C17CB;
 }
 
 
 
+@media screen and (min-width: 1200px) {
+    .nav-menu-active li{
+      display: inline-block;
+      height: 100%;
+      padding: 20px;
+      font-family: Roboto Mono, monospace;
+      font-size: 40px; 
+    }
 
-@media screen and (max-width: 960px) {
+    .nav-menu-active{
+      position: absolute;
+      top: -30px;
+      right: 0px;
+      height: 100%;
+      padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
   .NavbarItems {
       position: relative;
   }
@@ -80,14 +96,14 @@ ul {
 
   .nav-menu-active{
     background: transparent;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
   }
 
   .link {
     position: relative;
     top: 80px;
     text-align: center;
-    padding: 0rem;
+    padding: 1rem;
     width: 100%;
     display: table;
     font-size: 50px;
@@ -100,7 +116,7 @@ ul {
 
   .link:hover {
       background-color: #3C17CB;
-      border-radius: 0;
+      border-radius: 25px;
       color: #dbdbdb;
   }
 
@@ -108,16 +124,19 @@ ul {
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 30px;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
   }
 
-  .fa-times {
+  .fas {
       color: #dbdbdb;
       font-size: 2rem;
   }
   
+  .fas:hover{
+    color: #3C17CB;
+  }
 }
 

@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ContactForm from '../components/ContactForm/ContactForm.js';
 import Helmet from 'react-helmet';
 
 
-class Contact extends Component{
-    render(){
-        
-        return(
-            <div className = "contact" >
-              <Helmet>
-             <style>
-                {`
+class Contact extends Component {
+    render() {
+
+        return (
+            <div className="contact" >
+                <Helmet>
+                    <style>
+                        {`
                    html, body {
                        height: 100%;
                   }
@@ -21,14 +21,14 @@ class Contact extends Component{
                     background-position: center;
                   }
                 `}
-            </style>
-         </Helmet>
-             
+                    </style>
+                </Helmet>
+
                 <h1 className="contact-heading">
-                    Contact 
+                    Contact
                 </h1>
-                
-                <ContactForm/>
+
+                <ContactForm />
             </div>
         )
     }

@@ -23,10 +23,9 @@ class ContactForm extends React.Component {
       return(
         <div className = "contact-container" >
        
-       
             <div className="contact-info">
                 
-                <h4>
+                <h4 className="contact-heading">
                     Contact Information
                 </h4>
                 <p>Fill the form and I'll get back to you within 24 hours</p>
@@ -53,7 +52,6 @@ class ContactForm extends React.Component {
                     <a href="//github.com/kevinnguyen2208" target="blank" className="icon-circle">
                     <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-
                 </div>
             </div>
             <BackdropFilter

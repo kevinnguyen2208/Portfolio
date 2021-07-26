@@ -1,7 +1,7 @@
 [
         {
             "id":1,
-            "skills1":"Full-stack | UI/UX design | Game Design | Software Engineer"
+            "skills1":"Lightroom | Photoshop | XD"
         },
         {
             "id":2,
@@ -9,10 +9,10 @@
         },
         {
             "id":3,
-            "skills3":"MySQL | Oracle | MongoDB | MariaDB"
+            "skills3":"MySQL | MongoDB | MariaDB"
         },
         {
             "id":4,
-            "skills4":"Lightroom | Photoshop | XD"
+            "skills4":"Maya  |  Unity"
         }
 ]       

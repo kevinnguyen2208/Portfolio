@@ -3,7 +3,7 @@ import './ContactForm.css';
 import Button from '../Button/Button.js';
 import emailjs from 'emailjs-com';
 import BackdropFilter from "react-backdrop-filter";
-
+import { Row, Col } from "react-bootstrap";
 
 class ContactForm extends React.Component {
 
@@ -25,10 +25,10 @@ class ContactForm extends React.Component {
        
             <div className="contact-info">
                 
-                <h4 className="contact-heading">
-                    Contact Information
+                <h4 style={{marginLeft:"-20px"}}>
+                    <strong>Contact Information</strong>
                 </h4>
-                <p>Fill the form and I'll get back to you within 24 hours</p>
+                <p style={{marginLeft:"-20px"}}>Fill the form and I'll get back to you within 24 hours</p>
                 <div className="icon-text">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
                     <span>+61 475 051 821</span>
@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
 
                 <div className="icon-text">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <span>lbduy.nguyen2208@gmail.com</span>
+                    <span>lbduy.nguyen2208 @gmail.com</span>
                 </div>
 
                 <div className="icon-text">
@@ -68,7 +68,7 @@ class ContactForm extends React.Component {
 
             
             <form className="contact-form" onSubmit={sendEmail}>
-                <div className="col">
+                <Col>
                     <div className="form-group">
                         <label>First Name</label>
                         <input type="text" name="firstname"/>
@@ -77,8 +77,8 @@ class ContactForm extends React.Component {
                         <label>Last Name</label>
                         <input type="text" name="lastname"/>
                     </div>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                     <div className="form-group">
                         <label>E-Mail</label>
                         <input type="email" name="email"/>
@@ -87,19 +87,19 @@ class ContactForm extends React.Component {
                         <label>Phone</label>
                         <input type="tel" name="phone"/>
                     </div>
-                </div>
-                <div className="col">
+                </Col >
+                <Col>
                     <div className="form-group">
                         <label>Message</label>
                         <textarea name="message"></textarea>
                     </div>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                     <div className="form-group-button">
                    <Button btnColor="#05f7ff" backColor="#3C17CB"  model="outline" type="submit"  >Send
                             </Button>
                     </div>
-                </div>
+                </Col>
             </form>
             </BackdropFilter>
 

@@ -22,4 +22,5 @@
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
     outline: 0;
     text-transform: capitalize;
+    padding: 10px;
   }

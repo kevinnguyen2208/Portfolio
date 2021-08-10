@@ -3,10 +3,14 @@ body {
   color: #dbdbdb;
   width: 100%;
   height: 100%;
+  max-height: 3000px;
 }
 
 
 /* Home */
+.home{
+  padding-top: 80px;
+}
 
 .home-info{
   padding-left:100px;
@@ -18,13 +22,15 @@ body {
 }
 
 .home-desc{
-  min-height: 0px;
-  font-family:  Roboto Mono, monospace;
+  font-family: Roboto Mono, monospace;
+  font-size: 2rem;
 }
+
+
 
 .home-desc-comment{
   color: #A5CD2E;
-  font-family:  Roboto Mono, monospace;
+  font-family: Roboto Mono, monospace;
   font-size: 1.6rem;
 }
 
@@ -71,9 +77,10 @@ body {
 }
 
 .home-helmet{
-  height: 600px;
-  width: 600px;
-  padding-left: 300px;
+  height: 700px;
+  width: 700px;
+  padding-left: 100px;
+  padding-top: 80px;
 }
 
 
@@ -82,6 +89,7 @@ body {
   width: 50%;
   padding: 10px;
   height: 200px;
+  padding-bottom: 10px;
 }
 
 .column2 {
@@ -99,9 +107,9 @@ body {
 
 @media screen and (max-width: 960px) {
   .home-helmet{
-    width: 300px;
-    height: 300px;
-    padding-left: 150px;
+    width: 280px;
+    height: 280px;
+    padding-left: 10px;
   }
 
   .home-info{
@@ -118,16 +126,44 @@ body {
   }
 }
 
-@media screen and (min-width: 960px){
-  .starfield-animation-home{
+
+@media screen and (max-width: 400px){
+  .starfield-animation-nav{
     display: none;
   }
+
+  .home{
+    padding-left: 0px;
+    padding-right: 60%;
+  }
+
+  .home-info{
+    padding-left:20px;
+  }
+
+  .home-helmet{
+    width: 400px;
+    height: 400px;
+    padding-left: 150px;
+  }
+
+}
+
+@media screen and (min-width: 960px){
+  .starfield-animation-nav{
+    display: none;
+  }
+  
 }
 
 
 /* About */
 .about{
   padding-top: 200px;
+}
+
+.about-heading{
+  font-family: Roboto Mono, monospace;
 }
 
 .myself{
@@ -140,7 +176,7 @@ body {
 .social-media-about{
   display: flex;
   width: 100%;
-  align-items: center;
+ align-self: center;
 }
 
 .icon-about{
@@ -308,9 +344,26 @@ body {
   cursor: grabbing;
 }
 
+@media screen and (max-width: 1200px) {
+  .skills-word{
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+}
+
 
 
 /* Contact */
+
+@media screen and (min-width: 1200px) {
+
+  .contact{
+    margin-left: 100px;
+  }
+
+}
+
+
 .contact{
   flex-direction: column;
   justify-content: center;
@@ -321,9 +374,79 @@ body {
 }
 
 .contact-heading{
-  font-family: Roboto Mono, monospace;   
+  font-family: Roboto Mono, monospace; 
+  padding-top: 80px;
 }
 
 
+/* Projects */
+.project-heading{
+  font-family: Roboto Mono, monospace; 
+}
+
+.purple {
+  color: #3C17CB;
+}
+
+.project-section {
+  padding-top: 150px ;
+  padding-bottom: 30px ;
+  background-image: var(--section-background-color) ;
+  text-align: center;
+}
+
+.project-card {
+  padding-top: 50px ;
+  padding-bottom: 50px ;
+  padding-left: 25px ;
+  padding-right: 25px ;
+  height: auto ;
+  font-family: Roboto Mono, monospace; 
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px #3C17CB ;
+  color: white ;
+  background-color: transparent ;
+  opacity: 0.8 ;
+  transition: all 0.5s ease 0s ;
+  height: 100% ;
+
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) ;
+  overflow: hidden ;
+  opacity: 1;
+  box-shadow: 0 4px 4px 5px #3C17CB ;
+}
 
 
+.card-img-top {
+  padding: 20px ;
+  opacity: 0.8 ;
+  border-radius: 10px ;
+}
+
+
+.btn-primary {
+  color: #fff ;
+  background-color: #3C17CB ;
+  border-color: #3C17CB ;
+}
+
+.btn-primary:hover {
+  color: #fff ;
+  background-color: #3C17CB ;
+  border-color: #3C17CB ;
+}
+.btn:focus {
+  outline: none ;
+  box-shadow: none ;
+}
+.project-heading {
+  color: white ;
+  font-size: 2.3em ;
+  font-weight: 500 ;
+  padding-top: 10px ;
+}

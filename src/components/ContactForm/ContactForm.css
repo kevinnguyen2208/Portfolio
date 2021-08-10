@@ -1,19 +1,97 @@
-@media screen and (max-width: 960px) {
-    .contact-container{
-       display: flex;
-       flex-direction: column;
+@media screen and (max-width: 1200px) {
+
+    .contact-heading{
+     
+      padding-top:800px;
     }
-  }
+
+    .contact-container{
+       flex-direction: column;
+       display: flex;  
+        
+    }
+
+    .contact-info{
+        width: 100%;
+        align-self: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .bluredForm{
+        align-self: center;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        display: flex;        
+    }
+
+    .contact-form{
+        margin-left: -20px;
+    }
+
+    span{
+        margin-left: -10px;
+    }
+
+    .icon-text{
+        margin-left: -35px;
+    }
+ 
+    .col{
+        display: flex;
+        flex-direction: column;
+        width: 80%;  
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contact-heading{
+      margin-top:-700px;
+    }
+  
+}
+
+@media screen and (max-width: 550px) {
+    .contact-heading{
+        padding-top:1100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    input[type="text"],input[type="tel"],input[type="email"],textarea{
+        width: 150px;   
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .contact-heading{
+        padding-top:800px;
+      }
+}
+
 
 
 .contact-container{
     display: flex;
-    width: 1000px;
+    width: 60%;
     border-radius: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 15px;
     font-family: Roboto Mono, monospace;
 }
+
+/* Contact Info */
+
+
 
 .contact-info{
     background-color: #3C17CB;
@@ -26,6 +104,8 @@
     flex-direction: column ; 
     font-family: Roboto Mono, monospace;                                                                                                                                                                            
 }
+
+
 
 h1{
     text-align: center;
@@ -40,15 +120,14 @@ p.sub-title{
 }
 
 h4{
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 0;
+    font-size: 1.6rem;
+    margin: auto;
+   
 }
 
 p{
     color: rgba(255,255,255,.7);
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 
@@ -60,9 +139,9 @@ p{
 }
 
 .fa{
-    flex: 0 0 20px;
+    flex: 0 0 20%;
     font-size: 1.8rem;  
-    margin-right: 2rem;
+    margin-right: 1rem;
     color:#05f7ff;
 }
 
@@ -71,7 +150,7 @@ p{
 }
 
 .span{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -90,8 +169,11 @@ p{
     text-decoration: none;
 }
 
+
+/* Contact Form blurred */
+
 form{
-    padding: 50px 50px 50px 50px;
+    padding: 50px;
     width: 100%;
 }
  
@@ -129,6 +211,7 @@ input[type="text"],input[type="tel"],input[type="email"],textarea{
     color: #dbdbdb;
     background: transparent;
     margin-bottom: 2rem ;
+   
 }
 
 input:focus{
@@ -162,12 +245,12 @@ button{
     cursor: pointer; 
 }
 
-.bluredForm  {
-    width: 1000px;   
-    padding-right: 100px;
+.bluredForm  {  
+    padding-right:80px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: grey ;
 }
 
 

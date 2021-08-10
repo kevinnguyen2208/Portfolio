@@ -1,18 +1,18 @@
 [
         {
             "id":1,
-            "skills1":"Lightroom | Photoshop | XD"
+            "skills1":"Lightroom  Photoshop  XD"
         },
         {
             "id":2,
-            "skills2":"React | NodeJS | JavaScript | PHP | C | Java | Kotlin | Python | Ruby | Web API"
+            "skills2":"React NodeJS JS PHP Java C++ Python Ruby"
         },
         {
             "id":3,
-            "skills3":"MySQL | MongoDB | MariaDB"
+            "skills3":"Firebase    MySQL   MongoDB   MariaDB"
         },
         {
             "id":4,
-            "skills4":"Maya  |  Unity"
+            "skills4":"Maya    Unity"
         }
 ]       

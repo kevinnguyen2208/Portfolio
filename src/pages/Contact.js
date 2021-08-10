@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ContactForm from '../components/ContactForm/ContactForm.js';
 import Helmet from 'react-helmet';
-
+import { Preloader, Placeholder } from 'react-preloading-screen';
 
 class Contact extends Component {
     render() {
 
         return (
             <div className="contact" >
-                <Helmet>
+                {/* <Helmet>
                     <style>
                         {`
                    html, body {
@@ -22,7 +22,7 @@ class Contact extends Component {
                   }
                 `}
                     </style>
-                </Helmet>
+                </Helmet> */}
 
                 <h1 className="contact-heading">
                     Contact

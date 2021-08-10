@@ -16,6 +16,10 @@ class NavBar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
+  handleRefresh = () => {
+    // by calling this method react re-renders the component
+    this.setState({});  };
+
 
   render() {
 
@@ -65,13 +69,13 @@ class NavBar extends Component {
         <div className={this.state.clicked ? "nav-menu-active" : "nav-menu"}>
           <ul>
             <nav onClick={this.handleClick}>
-              <li><NavLink className="link" exact to="/" activeStyle>home()
+              <li><NavLink className="link" exact to="/" onClick={event => window.location.href = '/'} >home()
               </NavLink></li>
-              <li><NavLink className="link" to="/about" activeStyle>about()
+              <li><NavLink className="link" to="/about" onClick={event => window.location.href = '/about'}  >about()
               </NavLink></li>
-              <li><NavLink className="link" to="/work" activeStyle>work()
+              <li><NavLink className="link" to="/work" onClick={event => window.location.href = '/work'}  >work()
               </NavLink></li>
-              <li><NavLink className="link" to="/contact" activeStyle>contact()
+              <li><NavLink className="link" to="/contact" onClick={event => window.location.href = '/contact'}  >contact()
               </NavLink></li>
             </nav></ul></div>
       </nav>

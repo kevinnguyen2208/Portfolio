@@ -5,21 +5,21 @@ import Button from '../components/Button/Button.js';
 import ReactFloaterJs from 'react-floaterjs';
 import Helmet from '../resources/img/helmet.png';
 import StarfieldAnimation from 'react-starfield-animation';
+import { Row, Col } from "react-bootstrap";
 
 
 class Home extends Component {
     render() {
-
+        
         return (
             <div className="home">
 
-
-                <div class="row">
-                    <div className="column1">
+                <Row style={{ justifyContent: "center", paddingBottom: "40px" }}>
+                    <Col md={2} className="column1">
                         <div className="starfield-animation-home">
                             <StarfieldAnimation
                                 style={{
-                                    position: 'absolute',
+                                    position: 'fixed',
                                     width: '100%',
                                     height: '100%',
                                 }}
@@ -28,20 +28,20 @@ class Home extends Component {
 
                             <Typist avgTypingDelay={25}>
                                 <span className="tag-open">&lt;header&gt;</span>
-                                <h1 className="home-desc">Hello World</h1>
+                                <h1 className="home-desc"><strong>Hello World</strong></h1>
                                 <span className="tag-close">&lt;/header&gt;</span>
 
                                 <span className="tag-open">&lt;body&gt;</span>
                                 <h2 className="home-desc-comment">&lt;!-- name[0] = Le Bao Duy Nguyen --&gt;</h2>
                                 <h2 className="home-desc-comment">&lt;!-- name[1] = Kevin Nguyen --&gt;</h2>
                                 <span className="tag-in">&lt;job&gt;</span>
-                                <h1 className="home-desc"><Typewriter options={{
+                                <h1 className="home-desc"><strong><Typewriter options={{
                                     strings: ['Full-stack Developer', 'Software Engineer', "Game Developer"],
                                     autoStart: true,
                                     loop: true,
                                     delay: 30,
                                     deleteSpeed: 30
-                                }} /></h1>
+                                }} /></strong></h1>
                                 <span className="tag-in">&lt;/job&gt;</span>
                                 <span className="tag-close">&lt;/body&gt;</span>
 
@@ -55,16 +55,16 @@ class Home extends Component {
                                 <span className="tag-close">&lt;/footer&gt;</span>
                             </Typist>
                         </div>
-                    </div>
+                    </Col>
 
-                    <div className="column2">
-                        <div>
+                    <Col md={2} className="column2">
+                      
                             <ReactFloaterJs>
                                 <img className="home-helmet" src={Helmet} />
                             </ReactFloaterJs>
-                        </div>
-                    </div>
-                </div>
+                      
+                    </Col>
+                </Row>
             </div>
         )
     }

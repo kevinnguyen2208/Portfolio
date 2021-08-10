@@ -1,39 +1,54 @@
 [
   {
-    "id": "recAGJfiU4CeaV0HL",
-    "order": 3,
+    "order": 4,
     "title": "MOBILE APP DEVELOPER",
-    "dates": "December 2017 - Present",
+    "dates": "March 2021 - Present",
     "duties": [
-      "Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt.",
-      "Post-ironic selvage chambray sartorial freegan meditation. Chambray chartreuse kombucha meditation, man bun four dollar toast street art cloud bread live-edge heirloom.",
-      "Butcher drinking vinegar franzen authentic messenger bag copper mug food truck taxidermy. Mumblecore lomo echo park readymade iPhone migas single-origin coffee franzen cloud bread tilde vegan flexitarian."
+      "TECH USED: React Native, NodeJS, Firebase, Adobe XD, Figma, Git.",
+      "Design the UI/UX of the mobile application and conduct various user testing.",
+      "Develop and maintain online website using Firebase cloud-based platform.",
+      "Build the application using React Native and NodeJS while maintain a CI/CD environment."
     ],
     "company": "PAI STUDIO"
   },
   {
-    "id": "recIL6mJNfWObonls",
-    "order": 2,
+    "order": 3,
     "title": "LEAD ADMINISTRATOR",
-    "dates": "May 2015 - December 2015",
+    "dates": "October 2017 - Present",
     "duties": [
-      "Hashtag drinking vinegar scenester mumblecore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
-      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
-      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1",
-      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1"
+      "TECH USED: Compass Education, Advanced Excel.",
+      "Plan, direct and monitor instructional methods and content of educational and student activity ́s programs.",
+      "Prepare and maintain attendance, activity, planning, accounting as well as personnel reports and records. Reports are done monthly and annually using Google Spreadsheet and Excel.",
+      "Manage and record staff and student ́s records using VCAA-authorized education software (Compass), as well as acted as accountant for school's related fees and student's tuition fee.",
+      "Assist in organizing and planning multiple school´s annual events, generating around AUD 5,000 per event.",
+      "Increased customer base by 68% in 2021 following a series of dedicated campaigns and system improvements.",
+      "In progress: People Management App is currently in research and prototype is to be proposed to the school's board by the end of 2021."
     ],
     "company": "HOA NGHIEM"
   },
   {
-    "id": "rec61x18GVY99hQq5",
-    "order": 1,
+    "order": 2,
     "title": "DATA COORDINATOR",
-    "dates": "May 2014 - September 2015",
+    "dates": "April 2021 - July 2021",
     "duties": [
-      "I'm baby woke mumblecore stumptown enamel pin. Snackwave prism pork belly, blog vape four loko sriracha messenger bag jean shorts DIY bushwick VHS. Banjo post-ironic hella af, palo santo craft beer gluten-free.",
-      "YOLO drinking vinegar chambray pok pok selfies quinoa kinfolk pitchfork street art la croix unicorn DIY. Woke offal jianbing venmo tote bag, palo santo subway tile slow-carb post-ironic pug ugh taxidermy squid.",
-      "Pour-over glossier chambray umami 3 wolf moon. Iceland kale chips asymmetrical craft beer actually forage, biodiesel tattooed fingerstache. Pork belly lomo man braid, portland pitchfork locavore man bun prism."
+        "TECH USED: Salesforce, Advanced Excel.",
+        "Manage and process large data projects (minimum of 5,000 records per worksheet), including workflow scheduling, data entry and accuracy verification.",
+        "Transfer compiled information from Microsoft Excel and input into Salesforce database, include the process of monitoring and sorting Salesforce records.",
+        "Increased organization's work efficiency in data processing by 20% by creating different scripts and formulas in VBA Macro.",
+        "Worked on several million-dollar government contracts and multiple global luxury hospitality properties contracts that involves purchasing of large quantity of high-end furniture."
     ],
     "company": "IHS GLOBAL ALLIANCE"
+  },
+  {
+    "order": 1,
+    "title": "PROJECT PLANNER/ WEB DEVELOPER",
+    "dates": "June 2020 - November 2020",
+    "duties": [
+      "TECH USED: WordPress, React, Advance Excel.",
+      "Designed and researched about technologies to be used in the project.",
+      "Coordinated with team members in planning, developing, and organizing activities.",
+      "Conducted multiple market researches and planned the operation budget."
+    ],
+    "company": "VIRTUAL MARKETPLACE"
   }
 ]

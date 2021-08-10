@@ -11,23 +11,37 @@ import reportWebVitals from "./reportWebVitals";
 import "./components/ContactForm/ContactForm.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import { Preloader, Placeholder } from 'react-preloading-screen';
+import spinner from '../src/resources/img/loading.gif'
+
 
 
 ReactDOM.render(
+  <Preloader style={{backgroundColor: "black"}} fadeDuration="800">
+      <Placeholder>
+        <img src={spinner} alt="loading" />
+      </Placeholder>
   <Router>
+    
     <div>
       <NavBar/>
+      
       <Switch>
-        <Route path="/" exact component={Home}  />
+      
+        <Route path="/" exact component={Home}   />
         <Route path="/about" component={About} />
         <Route path="/work" component={Work}/>
         <Route path="/contact" component={Contact}  />
       </Switch>
-      {/* <Footer/> */}
+  
     </div>
-  </Router>,
+    
+  </Router></Preloader>,
   document.getElementById("root")
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

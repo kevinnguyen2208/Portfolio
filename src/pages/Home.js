@@ -26,7 +26,7 @@ class Home extends Component {
                             /></div>
                         <div className='home-info'>
 
-                            <Typist avgTypingDelay={25}>
+                            <Typist avgTypingDelay={50}>
                                 <span className="tag-open">&lt;header&gt;</span>
                                 <h1 className="home-desc"><strong>Hello World</strong></h1>
                                 <span className="tag-close">&lt;/header&gt;</span>

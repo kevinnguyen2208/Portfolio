@@ -17,8 +17,7 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto; 
     }
 
     .bluredForm{
@@ -34,13 +33,7 @@
         margin-left: -20px;
     }
 
-    span{
-        margin-left: -10px;
-    }
-
-    .icon-text{
-        margin-left: -35px;
-    }
+    
  
     .col{
         display: flex;
@@ -63,6 +56,17 @@
         padding-top:1100px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    span{
+        margin-left: -10px;
+    }
+    
+    .icon-text{
+        margin-left: -35px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     input[type="text"],input[type="tel"],input[type="email"],textarea{

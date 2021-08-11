@@ -133,12 +133,14 @@ body {
   }
 
   .home{
-    padding-left: 0px;
     padding-right: 60%;
+    
   }
 
   .home-info{
     padding-left:20px;
+    margin-top: -140px;
+    margin-left: -10px;
   }
 
   .home-helmet{
@@ -159,7 +161,7 @@ body {
 
 /* About */
 .about{
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 .about-heading{

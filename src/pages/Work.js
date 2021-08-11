@@ -6,6 +6,7 @@ import GA from "../resources/img/gamingai.png";
 import S from "../resources/img/store.png";
 import V from "../resources/img/virus.png";
 import P from "../resources/img/portfolio.png";
+import JW from "../resources/img/juniorweb.png";
 import AA from "../resources/img/androidapp.png";
 import BS from "../resources/img/battleship.png";
 import TOS from "../resources/img/tutoronlineservice.png";
@@ -52,7 +53,7 @@ function Work() {
                         <ProjectCards
                             imgPath={V}
                             title="Space Invaders (Virus Edition)"
-                            description="Unity 2D game inspired by Space Invader with a little twist... "
+                            description="Unity 2D game inspired by Space Invaders using C# with a little twist... "
                             link="https://github.com/kevinnguyen2208/Space-Invaders-Virus-Edition"
                         />
                     </Col>
@@ -68,6 +69,16 @@ function Work() {
                         />
                     </Col>
 
+
+                    <Col md={4} className="project-card">
+                        <ProjectCards
+                            imgPath={AA}
+                            title="Android Application"
+                            description="Android simple apps (calculation, showing images, user form) using Kotlin"
+                            link="https://github.com/kevinnguyen2208/Android-Calculator---Image-Form"
+                        />
+                    </Col>
+
                     <Col md={4} className="project-card">
                         <ProjectCards
                             imgPath={S}
@@ -79,12 +90,13 @@ function Work() {
 
                     <Col md={4} className="project-card">
                         <ProjectCards
-                            imgPath={AA}
-                            title="Android Application"
-                            description="Android simple apps (calculation, showing images, user form) using Kotlin"
-                            link="https://github.com/kevinnguyen2208/Android-Calculator---Image-Form"
+                            imgPath={JW}
+                            title="Junior Year Multi-Page Web"
+                            description="Personal Website developed first year of coding using HTML, JS and PHP. The web supports personal login and modify data of applicants. Inspired by Robert Half"
+                            link="https://github.com/kevinnguyen2208/Junior-Year-Web-App"
                         />
                     </Col>
+                    
 
                     <Col md={4} className="project-card">
                         <ProjectCards
